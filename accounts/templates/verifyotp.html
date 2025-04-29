@@ -13,11 +13,11 @@
 
 
           <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">OTP</label>
-            <input type="text" name="password" class="form-control" id="exampleInputPassword1">
+            <label for="otp" class="form-label">OTP</label>
+            <input type="text" name="otp" class="form-control" id="otp" required>
           </div>
        
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary">Verify OTP</button>
 
         </form>
   </div>
@@ -28,6 +28,7 @@
     var email= document.getElementById('email').value
     if(email== ""){
       alert("Email cannot be blank")
+      return
     }
     window.location.href = '/account/send_otp/${email}/'
 

@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'makemytrip.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'makemytrip',
+        'NAME': 'makemytripClone',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',
@@ -105,6 +105,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = "accounts.HotelUser"
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
